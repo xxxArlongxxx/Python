@@ -38,14 +38,16 @@
 
 O nome "Pandas" vem de  **"Panel Data"** , um termo econométrico.
 
+
 ---
 
-## Separação de conceitos:
+
+
+# Separação de conceitos:
 
 ## 🧩 O que é Modularidade?
 
 A **modularidade** é o  **princípio de decompor um sistema complexo em partes menores e independentes** , chamadas  **módulos** , de forma que cada módulo execute uma função específica, podendo ser desenvolvido, testado e mantido de forma isolada.
-
 
 ## Camadas:
 
@@ -60,9 +62,21 @@ A **modularidade** é o  **princípio de decompor um sistema complexo em partes 
 * 🧪  **Testabilidade** : permite testar camadas separadamente;
 * 🔒  **Segurança e controle** : o acesso aos dados pode ser restringido e auditado.
 
-
 ## 🎓 Aplicações práticas:
 
 * **No Power Apps** : dividir um app em telas (módulos) como: cadastro, inspeção, análise.
 * **Em Python** : criar arquivos distintos para banco de dados, interface e lógica de negócio.
 * **Na manutenção industrial** : segmentar um sistema de produção em módulos operacionais independentes, permitindo manutenções setorizadas e minimizando paradas totais.
+
+
+
+---
+
+# Princípio DRY
+
+
+Esse conceito é apresentado no livro O Progrogramador Pragmático, de Hunt e Thomas (Bookman).
+
+DRY significa:
+
+***Don't repeat yourself (Não se repita)***
