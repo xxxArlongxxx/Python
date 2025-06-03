@@ -1,4 +1,4 @@
-# Cap 01 - Por que Python para Excel
+# Cap 01 - Por Que Python Para Excel
 
 -> Power Query utiliza linguagem M
 
@@ -38,10 +38,7 @@
 
 O nome "Pandas" vem de  **"Panel Data"** , um termo econométrico.
 
-
 ---
-
-
 
 # Separação de conceitos:
 
@@ -68,12 +65,9 @@ A **modularidade** é o  **princípio de decompor um sistema complexo em partes 
 * **Em Python** : criar arquivos distintos para banco de dados, interface e lógica de negócio.
 * **Na manutenção industrial** : segmentar um sistema de produção em módulos operacionais independentes, permitindo manutenções setorizadas e minimizando paradas totais.
 
-
-
 ---
 
 # Princípio DRY
-
 
 Esse conceito é apresentado no livro O Progrogramador Pragmático, de Hunt e Thomas (Bookman).
 
