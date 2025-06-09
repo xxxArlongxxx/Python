@@ -4,10 +4,10 @@
 
 ### **Instalação e Ambiente**
 
+* O que é Python?
 * Por que aprender Python?
-* O que é o Python
-* Principais caractéristas
-* Instalação do Python 3.12
+* Instalação do Python
+* Instalação do VS Code
 
 ### **Sintaxe e Tipos de Dados**
 
