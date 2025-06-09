@@ -2,12 +2,15 @@
 
 ## 📘 Conteúdo Fundamental para um Curso Básico de Python
 
-### **Instalação e Ambiente**
+### **Introdução ao Python**
 
 * O que é Python?
 * Por que aprender Python?
 * Instalação do Python
 * Instalação do VS Code
+* Instalação da Extensão Pyhton
+* Instalação da Extensão Dracula Theme
+* Primeiro código
 
 ### **Sintaxe e Tipos de Dados**
 
