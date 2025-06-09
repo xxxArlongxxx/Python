@@ -1,5 +1,6 @@
 # Aula 01 - Introdução ao Python
 
-* O que é o Python
+* Por que aprender Python?
+* O que é o Python?
 * Principais caractéristas
-* Instalação do Python 3.12
+* Instalação do Python

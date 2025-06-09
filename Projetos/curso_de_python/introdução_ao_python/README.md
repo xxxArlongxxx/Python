@@ -4,6 +4,7 @@
 
 ### **Instalação e Ambiente**
 
+* Por que aprender Python?
 * O que é o Python
 * Principais caractéristas
 * Instalação do Python 3.12
