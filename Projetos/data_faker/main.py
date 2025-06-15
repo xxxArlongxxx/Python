@@ -1,22 +1,31 @@
-import csv
-from faker import Faker
+# Importa as bibliotecas necessárias
+import csv               # Para escrever arquivos CSV
+from faker import Faker  # Para gerar dados falsos
 
-fake = Faker('pt_BR')  # Configurando o Faker para o português do Brasil
+# Cria uma instância do gerador de dados falsos
+fake = Faker()
 
-# Criando dados falsos para um banco de dados de usuários
-with open('fakeusers.csv', 'w', newline='') as csvfile:
-    fieldnames = ['nome', 'email', 'data_nascimento', 'estado', 'cidade', 'telefone']
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+# Define os nomes das colunas que serão usadas no arquivo CSV
+fieldnames = ['id', 'nome', 'email', 'telefone', 'endereco']
 
-    writer.writeheader()
-    for _ in range(10000):
-        writer.writerow({
-            'nome': fake.name(),
-            'email': fake.email(),
-            'data_nascimento': fake.date_of_birth(),
-            'estado': fake.state(),
-            'cidade': fake.city(),
-            'telefone': fake.phone_number()
+# Abre (ou cria) o arquivo 'usuarios.csv' no modo escrita ('w')
+# O 'with' garante que o arquivo será fechado corretamente após o uso
+with open('usuarios.csv', 'w', newline='', encoding='utf-8') as arquivo:
 
+    # Cria um escritor de arquivos CSV baseado em dicionários
+    escritor = csv.DictWriter(arquivo, fieldnames=fieldnames)
+
+    # Escreve a primeira linha (cabeçalho) com os nomes das colunas
+    escritor.writeheader()
+
+    # Gera 100 registros falsos
+    for i in range(1, 101):  # Começa do 1 para usar como ID
+
+        # Escreve uma nova linha com dados falsos para cada usuário
+        escritor.writerow({
+            'id': i,
+            'nome': fake.name(),               # Nome completo
+            'email': fake.email(),             # Endereço de e-mail
+            'telefone': fake.phone_number(),   # Número de telefone
+            'endereco': fake.address().replace('\n', ', ')  # Endereço, formatado em uma linha só
         })
-
